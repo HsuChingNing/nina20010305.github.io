@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HsuChingNing</title>
+
+    <style type="text/css">
+        body {
+            background-image: url("Screenshot_20191207_010823 (1).jpg");
+            background-attachment: scroll;
+            text-align: justify;
+        }
+
+        h4,
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .motto {
+            font-size: 20px;
+            font-family: 標楷體;
+            color: #FF95CA;
+            font-weight: bolder;
+            position: absolute;
+            top: 640px;
+            right: 147px;
+        }
+
+        .mem {
+            position: absolute;
+            top: 240px;
+            RIGHT: 170px;
+            width: 370px;
+            height: 370px;
+        }
+
+        .mem img {
+            transform: scale(1, 1);
+        }
+
+        .mem img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        h5 {
+            font-size: 30px;
+            font-family: 標楷體;
+            color: white;
+            position: absolute;
+            top: 650px;
+            right: 250px;
+        }
+
+        .name {
+
+            font-size: 40px;
+            font-family: 標楷體;
+            color: white;
+            position: absolute;
+            top: 740px;
+            right: 300px;
+
+        }
+
+        .english {
+
+            font-size: 30px;
+            font-family: 標楷體;
+            color: white;
+            position: absolute;
+            top: 790px;
+            right: 245px;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: 標楷體;
+            color: #FFC1E0;
+            border: #FFC1E0 6px solid;
+            position: absolute;
+            top: 1cm;
+            left: 10px;
+        }
+
+        .title2 {
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: 標楷體;
+            color: #FFC1E0;
+            border: #FFC1E0 6px solid;
+            position: absolute;
+            top: 750px;
+            left: 10px;
+        }
+
+        .title3 {
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: 標楷體;
+            color: #FFC1E0;
+            border: #FFC1E0 6px solid;
+            position: absolute;
+            top: 1900px;
+            left: 10px;
+        }
+
+        .p1 {
+            font-size: 15px;
+            color: white;
+            margin-top: 4cm;
+        }
+
+        .v {
+            position: absolute;
+            top: 0px;
+            right: -20px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #003D79;
+            padding: 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            width: 50%;
+            background-color: #ddd;
+        }
+
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .c {
+            width: 65%;
+            background-color: #FFC1E0;
+        }
+
+        .java {
+            width: 80%;
+            background-color: #FFC1E0;
+        }
+
+        .html {
+            width: 85%;
+            background-color: #FFC1E0;
+        }
+
+        .css {
+            width: 70%;
+            background-color: #FFC1E0;
+        }
+
+        .w {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .f {
+            position: absolute;
+            top: 850px;
+            right: 320px;
+        }
+
+        .f img {
+            transform: scale(1, 1);
+        }
+
+        .f img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .i {
+            position: absolute;
+            top: 850px;
+            right: 220px;
+        }
+
+        .i img {
+            transform: scale(1, 1);
+        }
+
+        .i img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .e {
+            position: absolute;
+            top: 850px;
+            right: 420px;
+        }
+
+        .e img {
+            transform: scale(1, 1);
+        }
+
+        .e img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .timeline {
+            position: absolute;
+            top: 900px;
+            left: 40px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .left {
+            left: 0px;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 30px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+        .content {
+            padding: 50px 10px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .container {
+                width: 100%;
+                padding-left: 100px;
+                padding-right: 25px;
+            }
+
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 30px 30px 30px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .left::after,
+            .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+
+        .sick {
+            width: 350px;
+            height: 270px;
+            position: absolute;
+            top: 50px;
+            left: 580px;
+        }
+
+        .sicks img {
+            transform: scale(1, 1);
+        }
+
+        .sicks img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .soap {
+            width: 350px;
+            height: 280px;
+            position: absolute;
+            top: 380px;
+            left: 70px;
+        }
+
+        .soaps img {
+            transform: scale(1, 1);
+        }
+
+        .soaps img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .web {
+            width: 350px;
+            height: 260px;
+            position: absolute;
+            top: 700px;
+            left: 580px;
+        }
+
+        .webs img {
+            transform: scale(1, 1);
+        }
+
+        .webs img:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .aa {
+            font-family: 標楷體;
+            font-size: 30px;
+            font-weight: bold;
+            color: #004B97;
+        }
+
+        .font {
+            font-family: 標楷體;
+            font-size: 20px;
+            color: black;
+        }
+
+        .night {
+            columns: 3;
+            position: absolute;
+            top: 2000px;
+            left: 380px;
+            width: 1000px;
+            column-rule: silver solid 1px;
+
+        }
+
+        .night2 {
+            padding: 10px;
+        }
+
+        h1 {
+            column-span: all;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: 標楷體;
+            font-weight: bold;
+        }
+
+        h7 {
+            font-size: 25px;
+            font-family: 標楷體;
+            color: white;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 標楷體;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="v"><img class="a" src="Ching Ning(粉紅色字體).png" width="100%" height="100%"></div>
+    <div class="title">程式技能</div>
+
+    <div class="mem"><img class="me" src="me.png" alt="我" width="400px" height="400px"></div>
+    <div class="motto">
+        <h3>做個可愛的少女，不煩世事，滿心歡喜</h3>
+    </div>
+    <h5>中原大學資管系</h5>
+    <h4 class="name">許景甯</h4>
+    <h6 class="english">Hsu Ching Ning </h6>
+    <div class="f"><a href="https://www.facebook.com/nininananing/" target="blank"><img style="width: 65px;"
+                title="facebbook" src="Facebook-share-icon.png"></a></div>
+    <div class="i"><a href="https://www.instagram.com/nini_nana_ning/" target="blank"><img style="width:65px;"
+                title="instagram" src="pet-icon-3.png"></a></div>
+    <div class="e"><a href="mailto:nina20010305@gmail.com"><img style="width: 65px;" title="email"
+                src="Circle-icons-mail.svg.png"></a></div>
+
+
+    <div class="p1">
+        <div>
+            <p>C#</p>
+            <div class="container">
+                <div class="skills c">65%</div>
+            </div>
+        </div>
+
+        <div>
+            <p>JAVA</p>
+            <div class="container">
+                <div class="skills java">80%</div>
+            </div>
+        </div>
+
+        <div>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">85%</div>
+            </div>
+        </div>
+
+        <div>
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">70%</div>
+            </div>
+        </div>
+    </div>
+    <div class="title2">課程活動</div>
+
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2 class="aa">企業概論專題-肯納手工皂</h2>
+                <p class="font">大一上有修企業概論這門課，我們在課堂中幫助肯納基金會義賣手工肥皂。再次期間我擔任行銷一職，<br>這使我學到豐富的行銷手法及溝通術。過程雖然辛苦，但卻受益良多。</p>
+            </div>
+        </div>
+        <div class="soaps"><a
+                href="file:///C:/Users/USER/Desktop/%E5%80%8B%E4%BA%BA%E5%B1%A5%E6%AD%B7/%E7%AE%A1%E7%90%86%E5%AD%B8%E6%9C%9F%E6%9C%AB%E4%BC%81%E5%8A%83%E6%9B%B8%20new.doc.pdf"><img
+                    class="soap" src="line_1635770242222787.jpg"></a></div>
+        <div class="container right">
+            <div class="content">
+                <h2 class="aa">管理學專題-防疫宣導</h2>
+                <p class="font">大一下修管理學時，剛好遇上新冠疫情巔峰期，於是我們選擇到位於八德的瑞峰國小進行防疫宣導。<br>教導國小學生的過程十分有趣，再次重返國小校園，也使我感嘆時光沖沖。 </p>
+            </div>
+        </div>
+        <div class="sicks"><a href="https://children-of-the-stars-project.jimdosite.com/"><img class="sick"
+                    src="98235.jpg"></a></div>
+        <div class="container left">
+            <div class="content">
+                <h2 class="aa">多媒體-樂學園</h2>
+                <p class="font">大二上的多媒體課程是我第一次寫出自己的網頁，過程雖艱辛，但在組員們的共同努力下，成果成果是美好的。</p>
+            </div>
+        </div>
+        <div class="webs"><a href="https://wen1126.github.io/homepage.html"><img class="web"
+                    src="螢幕擷取畫面 2020-11-29 233826.png"></a></div>
+    </div>
+    <div class="title3">系上活動</div>
+
+    <div class="night">
+        <h1>資管之夜</h1>
+        <div class="night2">
+            <img src="98592.jpg" width="300px" height="300px">
+            <h7>大一擔任美宣道具組</h7>
+            <p>大一的資管之夜，我因為害羞而選擇在幕後製作道具。</p>
+        </div>
+        <div class="night2">
+            <img src="98590.jpg" width="300px" height="300px">
+            <h7>大二在戲裡扮演護士一角</h7>
+            <p>大二時，我終於克服內向，決定上台演戲，雖然只是跑龍套，但對我而言是一大突破。</p>
+        </div>
+        <div class="night2">
+            <img src="98591.jpg" width="300px" height="300px">
+            <h7>大二在戲裡跳女舞</h7>
+            <p>大二的之夜，我不僅演戲，還有跳舞。雖然以前學過舞蹈，但這是我第一次嘗試性感風格，十分有趣。</p>
+        </div>
+    </div>
+</body>
+
+</html>
